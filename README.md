@@ -7,16 +7,23 @@ Authors:
 ## Intro
 ...
  
+## Dataset
+For dataset we chose a one from AnHai's group about electronics:
+https://sites.google.com/site/anhaidgroup/useful-stuff/the-magellan-data-repository
+ID:8
+
+We have downloaded the CSV files in this repository in folder `dataset/`
 ## Installation
 Install is done, following steps from here:
 http://anhaidgroup.github.io/py_entitymatching/v0.3.x/user_manual/installation.html
 
 `pip install -U numpy scipy py_entitymatching`
 ### Requirements
--  Python 3.x
--  Magellan Entity Matcher
-- C Compiler Required (This is necessary because this package contains Cython files)
-- Other(inferred from Entity MAther)
+- Python 3.x
+- Jupyter notebook
+- Magellan Entity Matcher
+- Other(inferred from Entity Matcher)
+  * C Compiler Required (This is necessary because this package contains Cython files)
   * pandas (provides data structures to store and manage tables)
   * scikit-learn (provides implementations for common machine learning algorithms)
   * joblib (provides multiprocessing capabilities)
