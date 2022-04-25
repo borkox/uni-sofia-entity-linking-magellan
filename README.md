@@ -40,3 +40,13 @@ http://anhaidgroup.github.io/py_entitymatching/v0.3.x/user_manual/installation.h
   * openrefine (provides data exploration tool for tables)
   * ipython (provides better tools for displaying tables in notebooks)
   * scipy (dependency for skikit-learn)
+
+### Starting Jupyter notebook
+Running a Jupyter notebook can be done in linux by checkout
+this repository and running this command in the root directory:
+
+`jupyter notebook --port=8181`
+
+This will open a browser and show the parent folder. Navigate to folder `notebooks`.
+In this folder you will see `entity_match_electronics.ipynb`. Click on it and it will
+show the notebook.
