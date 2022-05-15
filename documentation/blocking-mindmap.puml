@@ -1,0 +1,7 @@
+@startmindmap
++ Overlap[tfidf]
+++ candidate set
+-- Overlap blocker\n[Parameters]
+--- AttrEquivalence blocker\n[Brand]
+--- Overlap blocker\n[Name]
+@endmindmap
