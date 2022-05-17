@@ -1,0 +1,40 @@
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam object {
+  BackgroundColor application
+  ArrowColor black
+  ArrowColor black
+  BorderColor black
+}
+
+
+map "amazon.csv" as amazon {
+ 1 => ID (1)
+ 2 => Brand (Asus)
+ 3 => Name (ASUS X205TA 11.6 Inch Laptop...)
+ 4 => Amazon_Price ($199.00)
+ 5 => Original_Price (<null>)
+ 6 => Features (Intel Atom 1.33 GHz Processor....)
+}
+
+
+map "best_buy.csv" as best_buy {
+ 1 => ID (1)
+ 2 => Brand (Asus)
+ 3 => Name (Asus 11.6 Laptop Intel ...)
+ 4 => Price ($189.99)
+ 5 => Description (11.6&#34; Laptop - Intel ...)
+ 6 => Features (Microsoft Windows 8.1 operating ...)
+}
+
+amazon::2 -> best_buy::2
+amazon::3 -> best_buy::3
+amazon::4 -> best_buy::4
+amazon::5 -> best_buy::4
+amazon::6 -> best_buy::5
+amazon::6 -> best_buy::6
+
+@enduml
