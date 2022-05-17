@@ -1,4 +1,18 @@
 @startmindmap
+
+skinparam backgroundColor transparent
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor application
+    LineColor black
+  }
+  arrow  {
+     LineColor black
+     LineThickness 2
+  }
+}
+</style>
 + Overlap[tfidf]
 ++ candidate set
 -- Overlap blocker\n[Parameters]
