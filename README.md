@@ -64,9 +64,9 @@ We have downloaded the CSV and zipped files in here `dataset/dataset_electronics
 We have developed 2 Jupyter notebooks, one for blocking and the other for matching.
 See next section for running them. 
 
-* ![entity_block_electronics.ipynb](notebooks/entity_block_electronics.ipynb)
+* ![notebooks/entity_block_electronics.ipynb](notebooks/entity_block_electronics.ipynb)
 
-* ![entity_match_electronics.ipynb](notebooks/entity_match_electronics.ipynb)
+* ![notebooks/entity_block_electronics.ipynb](notebooks/entity_match_electronics.ipynb)
 
 Blocking we do like on this screen:
 ![entity_match_electronics.ipynb](documentation/Our_blocking.png)
