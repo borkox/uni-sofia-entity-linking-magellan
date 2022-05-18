@@ -75,8 +75,17 @@ For blocking we created 2 additional parameters: `Parameters`, which has only to
 
 The other field is called `tfidf` and contains 5 most important terms
 ```python
-# TFIDF for set B
-tfidf_matrix =  tf.transform((B['Brand'] + ' ' + B['Name']).fillna(""))
+from sklearn.feature_extraction.text import TfidfVectorizer
+import numpy as np
+tf = TfidfVectorizer(input='content', analyzer='word', ngram_range=(1,1),
+                      min_df = 0, stop_words = 'english', sublinear_tf=True)
+
+# Fit A and B to be one big corpus of terms
+tf.fit((A['Brand'] + ' ' + A['Name']).fillna(""))
+tf.fit((B['Brand'] + ' ' + B['Name']).fillna(""))
+
+# TFIDF for set A
+tfidf_matrix =  tf.transform((A['Brand'] + ' ' + A['Name']).fillna(""))
 feature_array = np.array(tf.get_feature_names())
 def extract_top_tfidf(column):
      response = tf.transform([column])
@@ -85,6 +94,9 @@ def extract_top_tfidf(column):
      top_n = feature_array[tfidf_sorting][:n]
      # stringify
      return " ".join(top_n)
+
+A['tfidf'] = ((A['Brand'] + ' ' + A['Name']).fillna("")).apply(extract_top_tfidf)
+
 B['tfidf'] = ((B['Brand'] + ' ' +B['Name']).fillna("")).apply(extract_top_tfidf)
 ```
 Example of new fields:
