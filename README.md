@@ -66,7 +66,7 @@ See next section for running them.
 
 * [notebooks/entity_block_electronics.ipynb](notebooks/entity_block_electronics.ipynb)
 
-* [notebooks/entity_block_electronics.ipynb](notebooks/entity_match_electronics.ipynb)
+* [notebooks/entity_match_electronics.ipynb](notebooks/entity_match_electronics.ipynb)
 
 Blocking we do like on this screen:
 ![entity_match_electronics.ipynb](documentation/Our_blocking.png)
