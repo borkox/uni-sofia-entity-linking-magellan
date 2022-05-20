@@ -1,10 +1,12 @@
-# Entity Linking with Magellan
+# Entity Matching with Magellan
 This is a project for Sofia University.
 
 Authors:
  - Kiril Dimov
  - Borislav Markov
-## Intro
+ 
+## Introduction
+
 Entity matching (EM) decides if disparate data pieces refer to the sam real-world entity. Many EM scenarios
 exist. In this document we will only focus on the scenario of matching tuples between two tables. Specifically, given two tables A and B, we want to find all pairs of tuples (a, b), where tuple a is from A and tuple
 b is from B and the two tuples refer to the same real-world entity. Next screen shows an example of such EM
